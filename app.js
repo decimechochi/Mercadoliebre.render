@@ -13,9 +13,6 @@ app.listen(port, ()=>{
         `Servidor corriendo en el puerto ${port}`);
 });
 
-app.listen(3008, () => {
-    console.log("servidor corriendo en puerto 3008");
-});
 
 app.get("/", (req,res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
