@@ -1,0 +1,35 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+
+div .logo {
+    width: 10px;
+}
+
+div .formulario-de-registro {
+    justify-content: center;    
+    padding: 10px;
+}
+
+.elegir {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 576px){
+    /* Tablet */
+
+}
+
+@media (min-width: 992px){
+    /* Desktop */
+
+}
