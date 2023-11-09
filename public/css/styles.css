@@ -51,7 +51,7 @@ header {
     background-color: #fff;
     display: flex;
     height: 40px;
-    width: 100px;
+    width: 70%;
     border: solid 1.5px black
 }
 
@@ -77,20 +77,23 @@ header div.top-header p {
 }
 
 header nav {
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 20px;
+    padding-bottom: 5px;
 }
 
 .nav-menu-item {
     justify-content: flex-start;
     height: 20px;
     display: none;
+    
 }
 
 .nav-header-menu {
-    justify-content: flex-start;
     height: 20px;
     display: none;
+    padding-right: 15px;
+    
 }
 
 ul li {
@@ -103,7 +106,7 @@ ul li a {
     color: #000;
     font-style: normal;
     font-weight: bold;
-    justify-content: space-around;
+    justify-content: space-between;
     display: none;
 }
 
@@ -159,17 +162,11 @@ article {
     
 }
 
-.precio {
-    font-size: 18px;
-    text-align: start;
-    font-weight: bold;
-}
-
 .camion {
     display: block;
-    font-size: 16px;
+    font-size: 15px;
     padding: 5px;
-    width: 30px;
+    width: 32px;
     height: 30px;
     border: 10px solid #39b54a;
     background-color: #FFF;
@@ -180,6 +177,12 @@ article {
     border-width: 3px;
     align-items: center;
     
+}
+
+.precio {
+    font-size: 18px;
+    text-align: start;
+    font-weight: bold;
 }
 
 .descuento {
@@ -202,7 +205,6 @@ h3,
     display: flex;
 }
 
-
 article img {
     width: 100%;
     border: 5px solid #666;
@@ -223,7 +225,6 @@ main {
     justify-content: center;
     border-top: solid 1px #ebebeb;
 }
-
 
 
 /*Footer*/
@@ -249,15 +250,19 @@ h3 {
 
 }
 
-i .card .regalo .seguridad {
+.card, .regalo, .seguridad {
     font-size: 2em;
-    background-color: #0044AA;
+    background-color: white;
+    color: #0044AA;
     height: 40px;
-    margin: 10px 0px 10px 0px;
-    padding: 10px;
     width: 40px;
+  
+}
+
+footer article div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
 }
 
 .text {
@@ -273,7 +278,7 @@ i .card .regalo .seguridad {
 
 }
 
-
+/*TABLETS*/
 
 @media (min-width: 576px) {
     .nav-menu-item {
@@ -288,11 +293,11 @@ i .card .regalo .seguridad {
         justify-content: flex-start;
         text-align: center;
         height: 20px;
-
     }
 
-    .productos {
-        width: 45%;
+    header nav {
+        display: flex;
+        justify-content: space-between;
     }
 
     .menu-hamburguesa {
@@ -310,23 +315,22 @@ i .card .regalo .seguridad {
     main section article .description {
         display: flex;
         flex-wrap: wrap;
-
+        padding-top: 10px;
     }
 
-    main section article:hover {
+    main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-     
+        width: 45%;
     }
 
-    main section div.productos {
+    main section div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         justify-content: space-between;
-        width: 45%;
         gap: 5px;
     }
 
@@ -334,10 +338,17 @@ i .card .regalo .seguridad {
     .discount {
         width: 50%;
     }
+    
+    .pay {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    
 
 }
 
+/*PC*/
 
 @media (min-width: 992px) {
     .nav-menu-item {
@@ -347,17 +358,17 @@ i .card .regalo .seguridad {
         height: 20px;
     }
 
-    .productos:hover {
+    .productos{
         display: flex;
         justify-content: space-between;
                
     }
 
-    main section article:hover {
+    main section article {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 33.3%;
+        width: 23%;
     }
 
     .nav-header-menu {
@@ -372,4 +383,5 @@ i .card .regalo .seguridad {
     display: none;
 
     }
+
 }
