@@ -43,7 +43,8 @@ h3.titulo {
 
 .perfil-del-usuario {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #ebebeb;
     padding: 10px 5px 10px 5px;
     margin: 20px 30px;
@@ -60,6 +61,11 @@ h3.titulo {
 .checkbox {
     display: contents;
     flex-wrap: wrap;
+}
+
+.bottom {
+    background-color: #ebebeb;
+
 }
 
 /* Tablet */
