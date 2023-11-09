@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*MOBILE*/
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
@@ -142,7 +144,6 @@ article {
     background-color: #fff;
     margin: 10px 0px;
     padding: 10px;
-    box-shadow: #666;
 }
 
 
@@ -169,13 +170,22 @@ article {
     width: 32px;
     height: 30px;
     border: 10px solid #39b54a;
-    color: #39b54a background-color: #FFF;
+    color: #39b54a;
+    background-color: #FFF;
     border-radius: 90%;
     position: absolute;
     right: 20px;
     top: -15px;
     border-width: 3px;
     align-items: center;
+    
+}
+
+section article:hover .camion {
+    transform: rotate(-90deg);
+    transition-duration: 1s;
+    box-shadow:  #666;
+
 }
 
 .camion:focus {
@@ -330,11 +340,17 @@ footer article div {
     }
 
     main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: none /* 0px 10px rgb(100, 100, 100); */;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         width: 45%;
+    }
+
+    section article:hover .camion {
+        transform: rotate(-90deg);
+        transition-duration: 1s;
+            
     }
 
     main section div {
@@ -413,6 +429,10 @@ footer article div {
     .menu-hamburguesa {
         display: none;
 
+    }
+
+    footer article div i:hover {
+        color: #EAC926;
     }
 
 }

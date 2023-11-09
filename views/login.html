@@ -14,19 +14,54 @@
     <link rel="stylesheet" href="css/styles.log.css" />
 </head>
 
-<body>
-    <header>
+<header>
+
+    <body>
         <div class="top-header">
             <div class="logo">
                 <h5><img src="images/logo-mercado-liebre.svg" alt="logo mercado liebre"></h5>
             </div>
-    </header>
-    <main>
-        <div>
-
+            <div class="form" action="#" method="GET">
+                <div class="buscar">Buscar productos, marcas y más</div>
+                <div class="enviar"><i class="fa fa-search"></i></div>
+            </div>
+            <p><i class="manito fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
-    </main>
+        <nav>
+            <ul class="nav-menu-item">
+                <li><a href="#">Ofertas |</a></li>
+                <li><a href="#">Tiendas Oficiales |</a></li>
+                <li><a href="#">Vender |</a></li>
+                <li><a href="#">Ayuda |</a></li>
+            </ul>
+            <ul class="nav-header-menu">
+                <li><a href="/register">Creá tu cuenta |<i class="tarjta far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá |<i class="signo fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras |<i class="shop fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="menu-hamburguesa">
+            <i class="burguer fa fa-bars burger"></i>
+        </div>
+        <section>
+            <main>
+                <form class="form-log" action="login.html" method="post">
+                    <h>Inicia Sesión</h>
+                    <div class="campos">
+                        <p>
+                            <label for="email">Nombre de usuario</label>
+                        </p>
+                        <input type="text" name="user" id="user" placeholder="Nombre de usuario" required>
+                        <p>
+                            <label class="email">Contraseña</label>
+                        </p>
+                        <input type="password" name="password" id="password" placeholder="********" required>
+                    </div>
+                    <button type="submit" class="login">
+                        <a href="/">Enviar</a>
+                    </button>
+                </form>
+            </main>
+        </section>
 
-
-
-    #0022AA
+</header>
