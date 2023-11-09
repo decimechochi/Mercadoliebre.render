@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa7f7269a5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="css/styles.rgts.css" />
+    <link rel="stylesheet" href="css/styles.rgtr.css" />
 </head>
 
 <body>
@@ -19,56 +19,71 @@
             </div>
     </header>
     <main>
-        <section>
-            <h1>Crea tu cuenta</h1>
-            <form action="resultado.html" method="POST">
+        <div>
+            <section>
+                <h1>Crea tu cuenta</h1>
+                <form action="resultado.html" method="POST">
+            </section>
+            <p>
+            <h3 class="titulo">Formulario de registro</h3>
+            </p>
+            <div class="formulario-de-registro">
+                <p class="name">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </p>
+                <p class="user">
+                    <label for="usuario">Nombre de usuario</label>
+                    <input type="text" name="usuario" id="usuario" required>
+                </p>
+                <p class="mail">
+                    <label for="email">e-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    </section>
+                    <secction>
+                        <label for="fecha nacimiento">Fecha de nacimiento</label>
+                        <input type="date" name="fecha nacimiento" id="fecha nacimiento" required>
+                </p>
+                <p>
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" name="domicilio" id="domicilio" required>
+                </p>
+                </secction>
+            </div>
+        </div>
+        <div>
+            <p>
+            <h3 class="titulo">Perfil del Usuario</h3>
+            </p>
+        </div>
+        <section class="perfil-del-usuario">
+            <label>¿Cual es tu perfil?</label>
+            <input type="radio" name="comprador" value="comprador">Comprador
+            <input type="radio" name="vendedor" value="cendedor">Vendedor
+        </section>
+        <div>
+            <p>
+            <h3 class="titulo">Intereses</h3>
+            </p>
+        </div>
+        <section class="elegir">
+            <label>¿Cuales son tus intereses?</label>
+            <input type="checkbox" name="intereses" value="intereses">Electro
+            <input type="checkbox" name="intereses" value="intereses">Moda
+            <input type="checkbox" name="intereses" value="intereses">Hogar
+            <input type="checkbox" name="intereses" value="intereses">Jugueteria
+            <input type="checkbox" name="intereses" value="intereses">Vida sana
         </section>
         <p>
-        <h3 class="titulo">Formulario de registro</h3>
+            <label for="nombre">Password</label>
+            <input type="password" name="password" id="password" required>
         </p>
-        <div class="formulario-de-registro">
-            <p class="name">
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" name="nombre" id="nombre" required>
-            </p>
-            <p class="user">
-                <label for="usuario">Nombre de usuario</label>
-                <input type="text" name="usuario" id="usuario" required>
-            </p>
-            <p class="mail">
-                <label for="email">e-mail</label>
-                <input type="email" name="email" id="email" required>
-            </p>
-            <p>
-                </section>
-                <secction>
-                    <label for="fecha nacimiento">Fecha de nacimiento</label>
-                    <input type="date" name="fecha nacimiento" id="fecha nacimiento" required>
-            </p>
-            <p>
-                <label for="domicilio">Domicilio</label>
-                <input type="text" name="domicilio" id="domicilio" required>
-            </p>
-            </secction>
-            <section>
-                <label>Perfil del usuario</label>
-                    <input type="radio" name="comprador" value="comprador">Comprador
-                    <input type="radio" name="vendedor" value="cendedor">Vendedor
-            </section>
-            <section  class="elegir">
-                <label>Intereses</label>
-                <input type="checkbox" name="intereses" value="intereses">Electro
-                <input type="checkbox" name="intereses" value="intereses">Moda
-                <input type="checkbox" name="intereses" value="intereses">Hogar
-                <input type="checkbox" name="intereses" value="intereses">Jugueteria
-                <input type="checkbox" name="intereses" value="intereses">Vida sana
-            </section>
-            <p>
-                <label for="nombre">Password</label>
-                <input type="password" name="password" id="password" required>
-            </p>
-            <a href="/"><bottom type= "bottom">Enviar</bottom></a>
-            </form>
+        <a href="/">
+            <bottom type="bottom">Enviar</bottom>
+        </a>
+        </form>
     </main>
 </body>
 
