@@ -137,6 +137,18 @@ section.banner img {
     width: 100%;
 }
 
+
+form {
+    line-height: 30px;
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+button {
+    background-color: #ebebeb;
+    color: #0044AA;
+}
+
 /*Footer*/
 
 footer {
