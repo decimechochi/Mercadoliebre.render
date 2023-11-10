@@ -37,14 +37,14 @@ header {
     padding: 10px;
 }
 
-.form {
+.search-nav {
     display: flex;
     align-items: center;
     padding: 2px;
-    width: 500px;
+    width: 65%;
 }
 
-.buscar {
+/*.buscar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ header {
     height: 30px;
     width: 20%;
     border: solid 1.5px #666
-}
+}*/
 
 header div.top-header p {
     display: flex;
