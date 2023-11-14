@@ -1,24 +1,18 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-       background-color: #ebebeb;
+    background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
 }
 
 /*Header */
 
 header {
-    background-color: #eac926;
-    padding: 5px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+    background-color: #EAC926;
 }
 
 .top-header {
@@ -38,14 +32,6 @@ header {
     align-items: center;
     padding: 2px;
     width: 65%;
-}
-
-.input-search-nav{
-    border-radius: 2px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 2%;
 }
 
 header div.top-header p {
@@ -70,14 +56,17 @@ header nav {
     justify-content: flex-start;
     height: 20px;
     display: none;
-
 }
 
 .nav-header-menu {
     height: 20px;
     display: none;
     padding-right: 15px;
+}
 
+.search-nav input {
+    width: 600px;
+    height: 40px;
 }
 
 ul li {
@@ -119,12 +108,12 @@ section.banner img {
     width: 100%;
 }
 
+/*MAIN*/
 
 main {
     display: block;
     background-color: #ebebeb;
     margin: auto;
-    width: 90 vw;
     padding: 25px;
     max-width: 1200px;
     margin-bottom: 15px;
@@ -148,7 +137,7 @@ h3.titulo {
     padding: 15px;
     font-style: normal;
     font-weight: bold;
-        
+
 }
 
 .formulario-de-registro {
@@ -157,7 +146,6 @@ h3.titulo {
     margin: 20px 30px;
     border-radius: 20px;
     line-height: 40px;
-    
 }
 
 .perfil-del-usuario {
@@ -167,14 +155,14 @@ h3.titulo {
     margin: 20px 30px;
     border-radius: 20px;
     line-height: 3px;
-    
 }
 
 .elegir {
     border: 5px solid #EAC926;
     display: flex;
     flex-direction: column-reverse;
-    text-align: left;
+    text-align: center;
+    line-height: 15px;
     font-size: 16px;
     border-radius: 20px;
 }
@@ -223,6 +211,7 @@ h3 {
     color: #0044AA;
     height: 40px;
     width: 40px;
+    margin-bottom: 10px;
 
 }
 
@@ -242,30 +231,30 @@ footer article div {
 .copy {
     font-size: 20px;
     font-weight: normal;
-
 }
 
 /* Tablet */
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
     main {
-    background-color: #ebebeb;
-    margin: 40px;
-    width: 100 vw;
-    padding: 15px;
-    border: 2px solid #666;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    
-}
+        background-color: #ebebeb;
+        margin: 40px;
+        width: 100 vw;
+        padding: 15px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
 
 
 }
 
 
 
-/* Desktop */ 
+/* Desktop */
 
-@media (min-width: 992px){
-
-}
+@media (min-width: 992px) {}

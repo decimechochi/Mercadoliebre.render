@@ -88,14 +88,17 @@ header nav {
     justify-content: flex-start;
     height: 20px;
     display: none;
-
 }
 
 .nav-header-menu {
     height: 20px;
     display: none;
     padding-right: 15px;
+}
 
+input {
+    width: 600px;
+    height: 40px;
 }
 
 ul li {
@@ -150,14 +153,13 @@ article {
 .foto-articulo {
     padding: 10px;
     justify-content: center;
-    border: 1px solid #666;
+    
 }
 
 .leyenda-articulo {
     display: flex;
     padding: 30px;
     justify-content: flex-start;
-    border: 1.5px solid #666;
     width: 100%;
     position: relative;
 
@@ -272,6 +274,7 @@ h3 {
     color: #0044AA;
     height: 40px;
     width: 40px;
+    margin-bottom: 10px;
 
 }
 
@@ -333,14 +336,21 @@ footer article div {
         display: initial;
     }
 
-    main section article .description {
+    input {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 40px;
+    }
+    
+
+    .description {
         display: flex;
         flex-wrap: wrap;
         padding-top: 10px;
     }
 
     main section article {
-        box-shadow: none /* 0px 10px rgb(100, 100, 100); */;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -361,8 +371,8 @@ footer article div {
         gap: 5px;
     }
 
-    .price,
-    .discount {
+    .precio,
+    .descuento {
         width: 50%;
     }
 
@@ -396,7 +406,10 @@ footer article div {
     .productos {
         display: flex;
         justify-content: space-between;
-
+    }
+    
+    .descripcion:hover{
+        display: none;
     }
 
     main section article {
@@ -406,12 +419,15 @@ footer article div {
         width: 23%;
     }
 
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
     .nav-header-menu {
         display: initial;
         justify-content: flex-start;
         text-align: center;
         height: 20px;
-
     }
 
     .logo {
