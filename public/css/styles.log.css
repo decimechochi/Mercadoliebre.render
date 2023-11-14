@@ -149,6 +149,18 @@ button {
     color: #0044AA;
 }
 
+/*MAIN*/
+
+main {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
 /*Footer*/
 
 footer {

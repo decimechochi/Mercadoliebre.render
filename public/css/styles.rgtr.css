@@ -6,9 +6,119 @@
 }
 
 body {
-    background-color: #ebebeb;
+       background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
 }
+
+/*Header */
+
+header {
+    background-color: #eac926;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+    padding: 10px;
+}
+
+.search-nav {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    width: 65%;
+}
+
+.input-search-nav{
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+header div.top-header p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-style: bold;
+    font-size: 18px;
+    justify-content: center;
+    align-content: center;
+}
+
+header nav {
+    font-size: 16px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+.nav-menu-item {
+    justify-content: flex-start;
+    height: 20px;
+    display: none;
+
+}
+
+.nav-header-menu {
+    height: 20px;
+    display: none;
+    padding-right: 15px;
+
+}
+
+ul li {
+    list-style-type: none;
+    display: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+    justify-content: space-between;
+    display: none;
+}
+
+.menu-hamburguesa {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.burguer {
+    display: block;
+    align-self: center;
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    padding: 10px;
+    width: 40px;
+
+}
+
+section.banner img {
+    width: 100%;
+}
+
 
 main {
     display: block;
@@ -16,26 +126,14 @@ main {
     margin: auto;
     width: 90 vw;
     padding: 25px;
-    border: 2px solid #666;
-    border-radius: 20px;
     max-width: 1200px;
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
 }
 
 .create-form {
     padding: 20px 15px;
     max-width: 900px;
     margin: auto;
-}
-
-
-header{
-    height: 90px;
-}
-
-.logo {
-    width: 35%;
-    padding-top: 10px;
 }
 
 h1 {
@@ -58,6 +156,8 @@ h3.titulo {
     padding: 10px 5px 10px 5px;
     margin: 20px 30px;
     border-radius: 20px;
+    line-height: 40px;
+    
 }
 
 .perfil-del-usuario {
@@ -67,6 +167,7 @@ h3.titulo {
     margin: 20px 30px;
     border-radius: 20px;
     line-height: 3px;
+    
 }
 
 .elegir {
@@ -148,15 +249,20 @@ footer article div {
 
 @media (min-width: 576px){
     main {
-    background-color: white;
+    background-color: #ebebeb;
     margin: 40px;
-    padding: 25px;
+    width: 100 vw;
+    padding: 15px;
     border: 2px solid #666;
     border-radius: 20px;
-    max-width: fit-content;
+    margin-bottom: 15px;
+    
 }
 
+
 }
+
+
 
 /* Desktop */ 
 

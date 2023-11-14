@@ -9,13 +9,37 @@
     <script src="https://kit.fontawesome.com/fa7f7269a5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/styles.rgtr.css" />
+    
 </head>
-
 <body>
     <header>
-        <div class="top-header">
-            <div class="logo">
-                <h5><img src="Images/logo-mercado-liebre.svg" alt="logo mercado liebre"></h5>
+            <div class="top-header">
+                <div class="logo">
+                    <h5><img src="Images/logo-mercado-liebre.svg" alt="logo mercado liebre"></h5>
+                </div>
+                <div class="search-nav" action="#" method="GET">
+                    <input type=text placeholder="Buscar productos, marcas y mas" class="input-search-nav">
+                    <a href="#" targe="_blank"><i class="fa fa-search"></i></a>
+                </div>
+                <div>
+                    <p><i class="manito fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu-item">
+                    <li><a href="#">Ofertas |</a></li>
+                    <li><a href="#">Tiendas Oficiales |</a></li>
+                    <li><a href="#">Vender |</a></li>
+                    <li><a href="#">Ayuda |</a></li>
+                </ul>
+                <ul class="nav-header-menu">
+                    <li><a href="/register">Creá tu cuenta |<i class="tarjta far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá |<i class="signo fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras |<i class="shop fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <div class="menu-hamburguesa">
+                <i class="burguer fa fa-bars burger"></i>
             </div>
     </header>
     <main>
@@ -42,9 +66,7 @@
                         <input type="email" name="email" id="email" required>
                     </p>
                     <p>
-            </section>
-            <secction>
-                <label for="fecha nacimiento">Fecha de nacimiento</label>
+                    <label for="fecha nacimiento">Fecha de nacimiento</label>
                 <input type="date" name="fecha nacimiento" id="fecha nacimiento" required>
                 </p>
                 <p>
@@ -88,9 +110,7 @@
             <input type="password" name="password" id="password" required>
         </p>
         </div>
-        <button type="submit" class="login">
-            <a href="/">Enviar</a>
-        </button>
+        <button type="button" class="btn btn-primary">Enviar</button>
         </form>
     </main>
     <footer>
