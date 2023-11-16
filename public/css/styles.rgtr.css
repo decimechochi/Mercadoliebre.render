@@ -243,18 +243,47 @@ footer article div {
         padding: 15px;
         border-radius: 20px;
         margin-bottom: 15px;
+    }
 
+    .menu-hamburguesa {
+        display: none;
+    }
+    
+    .nav-menu-item {
+        display: initial;
+        justify-content: flex-start;
+        text-align: center;
+        height: 20px;
+    }
+
+    .nav-header-menu {
+        display: initial;
+        justify-content: flex-start;
+        text-align: center;
+        height: 20px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
     }
 
     .menu-hamburguesa {
         display: none;
     }
 
+    ul li a {
+        display: initial;
+    }
+
+    ul li {
+        display: initial;
+    }
+}
+
+/* Desktop */ 
+
+@media (min-width: 992px){
 
 }
 
-
-
-/* Desktop */
-
-@media (min-width: 992px) {}

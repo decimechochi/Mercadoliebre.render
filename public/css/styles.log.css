@@ -95,7 +95,6 @@ header nav {
     height: 20px;
     display: none;
     padding-right: 15px;
-
 }
 
 ul li {
@@ -139,14 +138,18 @@ section.banner img {
 
 
 form {
-    line-height: 30px;
+    font-size: 16px;
+    margin: 100px;
+    padding: 50px;
+    line-height: 35px;
     background-color: #ebebeb;
     text-align: center;
 }
 
-button {
-    background-color: #ebebeb;
-    color: #0044AA;
+.enviar {
+    background-color: #0044AA;
+    color:#ebebeb;
+    width: 50px;
 }
 
 /*MAIN*/
