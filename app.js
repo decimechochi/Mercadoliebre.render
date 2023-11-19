@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express ();
 const path = require ("path");
+const usuarioController = require("./Controller/usuarioController");
 
 app.use(express.static(__dirname + "/public"));
 
@@ -14,15 +15,9 @@ app.listen(port, ()=>{
 });
 
 
-app.get("/", (req,res) => {
-    res.sendFile(path.resolve(__dirname, "./views/home.html"))
-})
+app.get("/", usuarioController.home)
 
-app.get("/register", (req,res) => {
-    res.sendFile(path.resolve(__dirname, "./views/register.html"))
-})
+app.get("/register", usuarioController.registro )
 
-app.get("/login", (req,res) => {
-    res.sendFile(path.resolve(__dirname, "./views/login.html"))
-})
+app.get("/login", usuarioController.login)
 
