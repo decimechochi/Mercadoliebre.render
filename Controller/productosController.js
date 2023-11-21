@@ -1,6 +1,6 @@
 const path = require("path");
 
-const productoController = {
+const productosController = {
     detalle: (req,res) => {
         res.sendFile(path.resolve(__dirname, "./views/detale.html"))
     },
@@ -8,6 +8,6 @@ const productoController = {
 
 const routes = express.Router();
 
-routes.get("/", productoController.detalle)
+routes.get("/", productosController.detalle)
 
-module.export = productoController;
+module.export = productosController;
