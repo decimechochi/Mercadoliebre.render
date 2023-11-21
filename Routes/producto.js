@@ -1,5 +1,8 @@
-const express =require("express");
+const express = require("express")
 const router = express.Router();
+const productoController = require("../Controller/productoController");
 
-const productoController = require("../Controller/productosController");
+router.get("/", usuarioController.home)
+router.get("/", usuarioController.registro)
+router.get("/", usuarioController.login)
 

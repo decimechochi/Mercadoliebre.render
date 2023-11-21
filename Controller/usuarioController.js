@@ -1,5 +1,4 @@
-/*const usuarioController = require("./Controller/usuarioController");*/
- 
+const express = require("express")
 const usuarioController = {
     home: (req,res) => {
         res.sendFile(path.resolve(__dirname, "./views/home.html"))
@@ -12,5 +11,10 @@ const usuarioController = {
     },
 
 };
+const routes = express.Router();
+
+routes.get("/", usuarioController.home)
+routes.get("/register", usuarioController.registro )
+routes.get("/login", usuarioController.login)
 
 module.exports = usuarioController;
